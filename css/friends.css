@@ -1,0 +1,163 @@
+﻿.unionbox {
+    margin-bottom: 4rem;
+    width: 48%;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+    transition: all .5s;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+    .unionbox:hover {
+        transform: scale(1.05);
+    }
+
+    .unionbox .headimg {
+        display: inline-block;
+        width: 100px
+    }
+
+    .unionbox .content {
+        width: calc(100% - 120px);
+        display: inline-block;
+    }
+
+.headimg img {
+    width: 75px;
+    height: 75px;
+    border-radius: 75px;
+}
+
+.unionbox .avatar {
+    width: 100%
+}
+
+.unionbox .info {
+    margin: 2.5rem 0 1.5rem;
+    padding: 0 0 0.5rem 1.5rem;
+    display: flex;
+    margin-bottom: 0;
+}
+
+.unionbox h3 {
+    margin: 0;
+    max-width: 65%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 30px;
+}
+
+.unionbox .desc {
+    margin: .6rem 0 1.5rem;
+}
+
+.unionbox .btn {
+    display: inline-block;
+    background-color: #3eaf7c;
+    color: #fff;
+    border-radius: 2px;
+    padding: 4px 8px;
+    font-size: .7rem;
+    text-decoration: none;
+    cursor: pointer;
+    margin: 0 1.5rem 1.5rem 0rem;
+}
+
+@media (max-width: 719px) {
+    .unionbox {
+        width: 100%;
+    }
+}
+
+#app .table {
+    width: 100%;
+    display: table;
+    text-align: center;
+    border: none
+}
+
+    #app .table td {
+        border: none
+    }
+
+#app tr:nth-child(2n) {
+    background: none;
+}
+
+#app .table th {
+    border: none;
+    color: #2daebf;
+}
+
+#app tr {
+    border-bottom: 1px solid #dfe2e5;
+    border-top: none;
+}
+
+.friendstable th, .friendstable td {
+    padding: .6em 1em;
+    text-align: center;
+    font-size: 16px;
+}
+
+#app h2 {
+    font-size: 1.65rem;
+    padding-bottom: .3rem;
+    border-bottom: 1px solid #eaecef;
+}
+
+#app h6 {
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+#cnblogs_post_body th, .cnblogs-post-body th {
+    background: none
+}
+
+li {
+    line-height: 25px;
+}
+
+.pager span.current {
+    background: #2daebf;
+    border: 1px solid #2daebf;
+}
+
+.pager a {
+    border: none;
+}
+
+#Gallery table td a {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#Gallery table td {
+    padding: 5px;
+    text-align: center;
+}
+
+.gallery table td {
+    padding: 5px;
+    text-align: center;
+}
+
+    .gallery table td a {
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+.gallery img {
+    max-width: 100%;
+}
+
+.lock {
+    max-height: 20px;
+    display: inline;
+    position: relative;
+    top: 5px;
+    left: -5px;
+}

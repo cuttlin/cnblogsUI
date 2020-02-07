@@ -23,8 +23,11 @@
 * :tomato: 定制背景图片
 * :tangerine: 鼠标点击烟花
 * :grapes: 鼠标点击小秘密
+* :corn: 水晶鼠标样式
+* :banana: 我的简历功能
 * :peach: 留言板功能
 * :pear: 友链功能
+
 
 ## 食用方法
 
@@ -33,6 +36,547 @@
 
 #### 页面定制CSS代码
 ```css
+/* bluesky css */
+body {
+    background-image: url(images/bg.gif);
+    background-repeat: repeat;
+    background-color: #fffdfa;
+    cursor: url('https://blog-static.cnblogs.com/files/fsh001/1.gif'), url(https://blog-static.cnblogs.com/files/fsh001/1.gif), auto;/* 鼠标样式 */
+}
+/* 鼠标样式 */
+button,
+a{
+    cursor: url('https://blog-static.cnblogs.com/files/fsh001/1_1.gif'), url(https://blog-static.cnblogs.com/files/fsh001/1_1.gif), auto;
+}
+.clear {
+    clear: both
+}
+
+html {
+    color: #000;
+    overflow-y: scroll;
+    background: #fff
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+blockquote,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+pre,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+form,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    list-style-image: none
+}
+
+body,
+button,
+input,
+select,
+textarea {
+    font: 12px/1.5 Tahoma,Arial,Helvetica,sans-serif
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+address,
+cite,
+dfn,
+em,
+var {
+    font-style: normal
+}
+
+code,
+kbd,
+pre,
+samp,
+tt {
+    font-family: "Courier New",Courier,monospace
+}
+
+small {
+    font-size: 12px
+}
+
+ul,
+ol {
+    list-style: none
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #39f
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #39f
+}
+
+abbr[title],
+acronym[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+q:before,
+q:after {
+    content: ''
+}
+
+:focus {
+    outline: 0
+}
+
+legend {
+    color: #000
+}
+
+fieldset,
+img {
+    border: none
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+img {
+    -ms-interpolation-mode: bicubic
+}
+
+article,
+aside,
+dialog,
+footer,
+header,
+hground,
+section,
+footer,
+nav,
+figure,
+menu {
+    display: block
+}
+
+#navigator,
+#blogTitle,
+#main,
+#footer {
+    width: 1000px;
+    position: relative;
+    margin: 0 auto
+}
+
+#header {
+    height: 40px;
+    width: 100%;
+    background-color: #2175bc
+}
+
+#main {
+    margin-top: 6px;
+    background-color: #f5f5f5;
+    margin-bottom: 0
+}
+
+#mainContent {
+    width: 765px;
+    background: #fff;
+    box-shadow: 0 0 8px #999;
+    -moz-box-shadow: 0 0 8px #999;
+    -web-kit-shadow: 0 0 8px #999;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -web-kit-shadow: 6px;
+    float: left;
+    display: inline-block
+}
+
+#sideBar {
+    width: 200px;
+    padding: 16px;
+    display: inline-block;
+    overflow: hidden;
+    color: #2d2d2d
+}
+
+#footer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000;
+    font-size: 12px
+}
+
+#navigator {
+    top: 8px
+}
+
+#navList li {
+    float: left;
+    margin-right: 25px;
+    display: inline
+}
+
+    #navList li a {
+        font-size: 15px;
+        text-decoration: none;
+        color: #fff;
+        padding: 10px;
+        background-color: #2175bc
+    }
+
+        #navList li a:hover {
+            background-color: #2586d7;
+            margin-top: -2px;
+            padding-bottom: 12px;
+            color: #fff;
+            opacity: 1
+        }
+
+.blogStats {
+    color: #cacaca;
+    font-size: 12px;
+    text-align: right
+}
+
+#Header1_HeaderTitle {
+    color: #fff
+}
+
+    #Header1_HeaderTitle:hover {
+        text-decoration: none
+    }
+
+.day {
+    background: #fff;
+    padding: 32px
+}
+
+.postTitle,
+.postTitl2,
+.entrylistPosttitle {
+    font-size: 20px;
+    padding-right: 64px;
+    padding-left: 10px;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-left-color: #2175bc
+}
+
+    .postTitle a,
+    .postTitl2 a,
+    .entrylistPosttitle a {
+        color: #333
+    }
+
+        .postTitle a:link,
+        .post-title a:visited,
+        .postTitl2 a:link,
+        .postTitl2 a:visited,
+        .entrylistPosttitle a:link,
+        .entrylistPosttitle a:visited {
+            color: #000
+        }
+
+        .postTitle a:hover,
+        .postTitl2 a:hover,
+        .entrylistPosttitle a:hover {
+            color: #39f;
+            text-decoration: none
+        }
+
+.postBody,
+.postCon,
+.entrylistPostSummary {
+    clear: both;
+    margin-top: 26px
+}
+
+.postBody,
+.postCon,
+.entrylistPostSummary {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.8
+}
+
+    .postCon h1,
+    .postCon h2,
+    .postCon h3,
+    .postCon h4,
+    .postCon h5,
+    .postCon h6 {
+        font-weight: bold;
+        line-height: 1.8
+    }
+
+    .postBody h1,
+    .postCon h1 {
+        font-size: 20px
+    }
+
+    .postBody h2,
+    .postCon h2 {
+        font-size: 18px
+    }
+
+    .postBody h3,
+    .postCon h3 {
+        font-size: 16px
+    }
+
+    .postBody h4,
+    .postCon h4 {
+        font-size: 14px
+    }
+
+    .postBody h5,
+    .postCon h5 {
+        font-size: 14px
+    }
+
+    .postBody h6,
+    .postCon h6 {
+        font-size: 14px
+    }
+
+    .postBody dd,
+    .postCon dd {
+        padding-left: 2em
+    }
+
+    .postBody ul,
+    .postCon ul {
+        list-style: none;
+        margin-left: 20px
+    }
+
+        .postBody ul li,
+        .postCon ul li {
+            list-style: inside disc
+        }
+
+    .postBody dt,
+    .postCon dt {
+        font-weight: bold;
+        padding: 6px 0;
+        clear: both
+    }
+
+    .postBody ol,
+    .postCon ol {
+        list-style: none;
+        margin-left: 20px
+    }
+
+    .postBody blockquote,
+    .postCon blockquote {
+        width: 90%;
+        margin: 0 auto;
+        padding: 6px 0 6px 45px;
+        color: #666;
+        background: #fff url(/images/blockquote.gif) top left no-repeat
+    }
+
+.dayTitle,
+.postDesc {
+    font-size: 12px;
+    color: #999
+}
+
+.postDesc,
+.postDesc2,
+.entrylistItemPostDesc {
+    border-bottom: 1px dashed #e8e7d0;
+    text-align: right;
+    margin: 20px 0;
+    padding: 5px 0
+}
+
+.dayTitle {
+    border: 1px solid #ccc;
+    position: relative;
+    top: -20px;
+    width: 100px;
+    left: -20px;
+    padding-top: 3px;
+    padding-right: 0;
+    padding-bottom: 3px;
+    padding-left: 8px
+}
+
+    .dayTitle a {
+        color: #333
+    }
+
+.topicListFooter {
+    padding: 32px
+}
+
+#sideBarMain div {
+    margin-bottom: 26px
+}
+
+    #sideBarMain div div {
+        margin-bottom: 5px
+    }
+
+#sideBarMain h3 {
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #333;
+    border-bottom-width: 1px;
+    border-bottom-style: dashed;
+    border-bottom-color: #d4d4d4;
+    padding-bottom: 10px;
+    margin-top: 20px
+}
+
+#blog-comments-placeholder,
+#divRefreshComments,
+.commentform,
+#AjaxHolder_UpdatePanel1 {
+    padding: 0 32px
+}
+
+.post {
+    padding: 32px
+}
+
+.feedbackItem {
+    border: 1px solid #e3e3e3;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: #f6f6f6
+}
+
+.blog_comment_body {
+    color: #929292;
+    padding-top: 10px
+}
+
+.forFlow p {
+    margin-bottom: 18px
+}
+
+.forFlow img {
+    margin-top: 20px;
+    margin-bottom: 20px
+}
+
+.PostList,
+.entrylistItem {
+    margin: 20px
+}
+
+.entrylistTitle,
+.PostListTitle {
+    display: none
+}
+
+#blogTitle {
+    display: none
+}
+
+.cnblogs_code img {
+    margin: 0;
+    float: left
+}
+
+.cnblogs_code_toolbar {
+    margin-top: 0
+}
+
+.code {
+    padding: 0 10px
+}
+
+h4 {
+    font-size: 16px;
+    background-color: #f60;
+    margin: 0 -32px;
+    padding: 0 32px;
+    color: #fff
+}
+
+#myposts .myposts_title {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: center
+}
+
+#myposts .postTitl2 {
+    border-left: none;
+    padding-left: 0;
+    padding-right: 0
+}
+
+    #myposts .postTitl2 a {
+        font-size: 16px
+    }
+
+#myposts .postDesc2 {
+    margin: 20px 0 20px 5px
+}
+
+#cnblogs_post_body {
+    font-size: 14px
+}
+
+#green_channel img {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+#cnblogs_post_body img {
+    max-width: 650px
+}
+
+.commentbox_main img {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
 /*复制按钮*/
 .cnblogs-markdown pre {
   position: relative;
@@ -205,6 +749,7 @@ p#commentbox_opt {text-align: center;}
 #ad_t2{
    display: none !important;
 }
+
 ```
 
 #### 博客侧边栏公告
@@ -230,7 +775,8 @@ p#commentbox_opt {text-align: center;}
     <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path>
       </svg>
 </a>
-/* 自定义评论区 */
+TWF
+<!-- 自定义评论区 -->
 <link rel="stylesheet" href="https://blog-static.cnblogs.com/files/elkyo/OwO.min.css" />
 <script src="https://blog-static.cnblogs.com/files/elkyo/OwO.min.js"></script>
 <script>
@@ -318,13 +864,13 @@ jQuery(document).ready(function($) {
     //添加自定义按钮
     var uli = document.getElementById("navList");
     var cli = document.createElement("li");
+    cli.innerHTML = "<a href='https://www.cnblogs.com/fsh001/protected/p/12273530.html'>我的简历<img style='position: relative;top:2px;' src='https://i.loli.net/2020/02/07/3Hd5EgRC4WNeQjA.png' /></a>";
+    uli.appendChild(cli);
+    cli = document.createElement("li");
     cli.innerHTML = "<a href='https://www.cnblogs.com/fsh001/articles/12195239.html'>留言板</a>";
     uli.appendChild(cli);
     cli = document.createElement("li");
-    cli.innerHTML = "<a href='#'>友链</a>";
+    cli.innerHTML = "<a href='https://www.cnblogs.com/fsh001/p/12273579.html'>友链</a>";
     uli.appendChild(cli);
-    
-    
 </script>
-
 ```
